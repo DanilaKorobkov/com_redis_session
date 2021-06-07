@@ -1,4 +1,5 @@
 import secrets
+from datetime import timedelta
 
 import aioredis
 import attr
@@ -39,10 +40,14 @@ class SessionFactory(factory.Factory):
     refresh_token = factory.LazyFunction(secrets.token_urlsafe)
 
 
-def make_storage(redis: aioredis.Redis) -> RedisSessionStorage[Session]:
+def make_session_storage(
+    redis: aioredis.Redis,
+    expire_after: timedelta = None,
+) -> RedisSessionStorage[Session]:
     schema = SessionSchema()
     return RedisSessionStorage[Session](
         redis,
+        expire_after=expire_after,
         dumps=schema.dumps,
         loads=schema.loads,
     )
