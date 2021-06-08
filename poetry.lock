@@ -143,7 +143,7 @@ docker = "^5.0"
 type = "git"
 url = "git@github.com:DanilaKorobkov/com_redis_test_utils.git"
 reference = "develop"
-resolved_reference = "22f202968448f46bc56aa221617080fe6d9b2eb1"
+resolved_reference = "198589cd4c23aa87289646dea2c4a66b51429a35"
 
 [[package]]
 name = "coverage"
