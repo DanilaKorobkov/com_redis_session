@@ -64,7 +64,7 @@ async def test__add__with_expired(com_redis_client: aioredis.Redis) -> None:
     session: Session = SessionFactory.build()
 
     await session_storage.add(session)
-    await asyncio.sleep(1)
+    await asyncio.sleep(1.5)
 
     with pytest.raises(MissingSessionID):
         await session_storage.find(session.id)
