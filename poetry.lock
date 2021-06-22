@@ -144,7 +144,7 @@ docker = "^5.0"
 type = "git"
 url = "git@github.com:DanilaKorobkov/com_redis_test_utils.git"
 reference = "v0.1.0"
-resolved_reference = "97b40d2bcd4b9b9c68eb77aa7b5c3d4a14584f81"
+resolved_reference = "8492871b27100070e04cfb40dd74380eb23413c6"
 
 [[package]]
 name = "coverage"
@@ -191,7 +191,7 @@ doc = ["sphinx", "sphinx-rtd-theme", "sphinxcontrib-spelling"]
 
 [[package]]
 name = "faker"
-version = "8.6.0"
+version = "8.8.1"
 description = "Faker is a Python package that generates fake data for you."
 category = "dev"
 optional = false
@@ -227,11 +227,11 @@ smmap = ">=3.0.1,<5"
 
 [[package]]
 name = "gitpython"
-version = "3.1.17"
+version = "3.1.18"
 description = "Python Git Library"
 category = "dev"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6"
 
 [package.dependencies]
 gitdb = ">=4.0.1,<5"
@@ -262,16 +262,17 @@ python-versions = "*"
 
 [[package]]
 name = "isort"
-version = "5.8.0"
+version = "5.9.1"
 description = "A Python utility / library to sort Python imports."
 category = "dev"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = ">=3.6.1,<4.0"
 
 [package.extras]
 pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
 requirements_deprecated_finder = ["pipreqs", "pip-api"]
 colors = ["colorama (>=0.4.3,<0.5.0)"]
+plugins = ["setuptools"]
 
 [[package]]
 name = "lazy-object-proxy"
@@ -761,8 +762,8 @@ factory-boy = [
     {file = "factory_boy-3.2.0.tar.gz", hash = "sha256:401cc00ff339a022f84d64a4339503d1689e8263a4478d876e58a3295b155c5b"},
 ]
 faker = [
-    {file = "Faker-8.6.0-py3-none-any.whl", hash = "sha256:8f2800605b55cbf92d30c1a9db2cc11d0bfb200732590f597603a7789a43f5f4"},
-    {file = "Faker-8.6.0.tar.gz", hash = "sha256:69febb4db797d2c463e5bd56263aa0068c99480ace3beeb6ba0e14bf82d46607"},
+    {file = "Faker-8.8.1-py3-none-any.whl", hash = "sha256:cda50f6afaa4075464d7500ac838ec3cac3cc6824297e4340b2a17a62dc086a8"},
+    {file = "Faker-8.8.1.tar.gz", hash = "sha256:ccd76cd86a49f1042811faaa3a7d1b094fcf8e60a1ec286190417bbb5a3f2f76"},
 ]
 flake8 = [
     {file = "flake8-3.9.2-py2.py3-none-any.whl", hash = "sha256:bf8fd333346d844f616e8d47905ef3a3384edae6b4e9beb0c5101e25e3110907"},
@@ -773,8 +774,8 @@ gitdb = [
     {file = "gitdb-4.0.7.tar.gz", hash = "sha256:96bf5c08b157a666fec41129e6d327235284cca4c81e92109260f353ba138005"},
 ]
 gitpython = [
-    {file = "GitPython-3.1.17-py3-none-any.whl", hash = "sha256:29fe82050709760081f588dd50ce83504feddbebdc4da6956d02351552b1c135"},
-    {file = "GitPython-3.1.17.tar.gz", hash = "sha256:ee24bdc93dce357630764db659edaf6b8d664d4ff5447ccfeedd2dc5c253f41e"},
+    {file = "GitPython-3.1.18-py3-none-any.whl", hash = "sha256:fce760879cd2aebd2991b3542876dc5c4a909b30c9d69dfc488e504a8db37ee8"},
+    {file = "GitPython-3.1.18.tar.gz", hash = "sha256:b838a895977b45ab6f0cc926a9045c8d1c44e2b653c1fcc39fe91f42c6e8f05b"},
 ]
 hiredis = [
     {file = "hiredis-2.0.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:b4c8b0bc5841e578d5fb32a16e0c305359b987b850a06964bd5a62739d688048"},
@@ -828,8 +829,8 @@ iniconfig = [
     {file = "iniconfig-1.1.1.tar.gz", hash = "sha256:bc3af051d7d14b2ee5ef9969666def0cd1a000e121eaea580d4a313df4b37f32"},
 ]
 isort = [
-    {file = "isort-5.8.0-py3-none-any.whl", hash = "sha256:2bb1680aad211e3c9944dbce1d4ba09a989f04e238296c87fe2139faa26d655d"},
-    {file = "isort-5.8.0.tar.gz", hash = "sha256:0a943902919f65c5684ac4e0154b1ad4fac6dcaa5d9f3426b732f1c8b5419be6"},
+    {file = "isort-5.9.1-py3-none-any.whl", hash = "sha256:8e2c107091cfec7286bc0f68a547d0ba4c094d460b732075b6fba674f1035c0c"},
+    {file = "isort-5.9.1.tar.gz", hash = "sha256:83510593e07e433b77bd5bff0f6f607dbafa06d1a89022616f02d8b699cfcd56"},
 ]
 lazy-object-proxy = [
     {file = "lazy-object-proxy-1.6.0.tar.gz", hash = "sha256:489000d368377571c6f982fba6497f2aa13c6d1facc40660963da62f5c379726"},

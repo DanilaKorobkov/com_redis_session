@@ -32,17 +32,18 @@ class RedisSessionStorage(Generic[_SessionT]):
         self,
         session: _SessionT,
     ) -> None:
-        expire = (
-            self._expire_after.seconds
-            if self._expire_after is not None
-            else 0
-        )
-
         await self._redis.set(
             session.id,
             self._dumps(session),
-            expire=expire,
+            expire=self._calculate_expire(),
         )
 
     async def remove(self, session: _SessionT) -> None:
         await self._redis.delete(session.id)
+
+    def _calculate_expire(self) -> int:
+        return (
+            self._expire_after.seconds
+            if self._expire_after is not None
+            else 0
+        )
