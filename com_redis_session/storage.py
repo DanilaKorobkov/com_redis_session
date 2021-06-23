@@ -22,7 +22,7 @@ class RedisSessionStorage(Generic[_SessionT]):
     _loads: Callable[[str], _SessionT] = attr.ib(kw_only=True)
 
     async def find(self, session_id: str) -> _SessionT:
-        string_view = await self._redis.get(session_id, encoding="utf-8")
+        string_view = await self._redis.get(session_id)
         if string_view is None:
             raise MissingSessionID
 
